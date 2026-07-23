@@ -1,1 +1,67 @@
+/* ==========================
+   Odd Drop Pixels Website
+   ========================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#121212;
+
+    color:white;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+.hero h1{
+
+    font-size:64px;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    color:#BDBDBD;
+
+    font-size:22px;
+
+    max-width:700px;
+
+    line-height:1.6;
+
+}
