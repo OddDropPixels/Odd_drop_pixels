@@ -76,3 +76,99 @@ body{
     line-height:1.6;
 
 }
+
+/* ==========================
+   Barra de navegación
+========================== */
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:#181818;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    border-bottom:1px solid #2A2A2A;
+
+}
+
+.logo{
+
+    font-size:26px;
+
+    font-weight:bold;
+
+    color:#9D4DFF;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:25px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#9D4DFF;
+
+}
+
+/* ==========================
+Botón principal
+========================== */
+
+.btn{
+
+    display:inline-block;
+
+    margin-top:35px;
+
+    background:#9D4DFF;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:16px 36px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+    font-weight:bold;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+    background:#7B2DFF;
+
+}
