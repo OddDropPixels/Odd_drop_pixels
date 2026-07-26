@@ -10,11 +10,15 @@ html {
 }
 
 body {
-    background: #0D0D12;
-    color: white;
-    line-height: 1.6;
-}
+    background:
+    radial-gradient(circle at top left, rgba(139,92,246,0.15), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(56,189,248,0.12), transparent 35%),
+    #0D0D12;
 
+    color:white;
+    line-height:1.6;
+    overflow-x:hidden;
+}
 
 /* NAVBAR */
 
@@ -37,11 +41,12 @@ header {
 
 
 .logo {
-    font-size: 1.3rem;
-    font-weight: bold;
-    letter-spacing: 2px;
+    font-size:1.3rem;
+    font-weight:bold;
+    letter-spacing:2px;
+    text-shadow:
+    0 0 10px rgba(139,92,246,.8);
 }
-
 
 .logo span {
     display: block;
@@ -115,9 +120,16 @@ header {
 
 
 .button:hover {
-    transform: translateY(-5px);
-}
 
+    transform:
+    translateY(-5px)
+    scale(1.05);
+
+    box-shadow:
+    0 0 20px rgba(139,92,246,.7),
+    0 0 40px rgba(56,189,248,.4);
+
+}
 
 .secondary {
     background: transparent;
@@ -209,6 +221,8 @@ h2 {
 .card {
 
     background:rgba(255,255,255,0.05);
+    
+    backdrop-filter:blur(10px);
 
     border:1px solid rgba(139,92,246,.4);
 
@@ -273,7 +287,32 @@ footer a {
 
 
 /* MOBILE */
+@keyframes aparecer {
 
+    from {
+
+        opacity:0;
+        transform:translateY(30px);
+
+    }
+
+    to {
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+
+.hero-text,
+.hero-image,
+.card {
+
+    animation: aparecer 1s ease;
+
+}
 
 @media(max-width:800px){
 
