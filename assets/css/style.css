@@ -438,6 +438,75 @@ body::before {
     font-weight:bold;
 
 }
+.brainimal-intro {
+
+    margin-top:60px;
+
+    text-align:center;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    background:
+    rgba(255,255,255,.05);
+
+    border:
+    1px solid rgba(56,189,248,.3);
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+.brainimal-intro h2 {
+
+    color:#38BDF8;
+
+    margin-bottom:20px;
+
+}
+
+
+.brainimal-intro p {
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#c7c7d1;
+
+}
+
+
+
+.evolution {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    margin-top:30px;
+
+    flex-wrap:wrap;
+
+}
+
+
+.evolution span {
+
+    padding:15px 25px;
+
+    border-radius:30px;
+
+    background:
+    linear-gradient(90deg,#8B5CF6,#38BDF8);
+
+    font-weight:bold;
+
+}
 @media(max-width:800px){
 
     .navbar{
