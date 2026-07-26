@@ -147,6 +147,8 @@ header {
 .app-placeholder {
 
     height:100%;
+    position:relative;
+    overflow:hidden;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -163,7 +165,46 @@ header {
     text-align:center;
 
 }
+.app-placeholder::after {
 
+    content:"";
+
+    position:absolute;
+
+    width:200%;
+    height:200%;
+
+    background:
+    linear-gradient(
+    120deg,
+    transparent,
+    rgba(56,189,248,.2),
+    transparent
+    );
+
+    transform:rotate(25deg);
+
+    animation:brillo 4s infinite;
+
+}
+
+
+@keyframes brillo {
+
+    from {
+
+        transform:translateX(-100%) rotate(25deg);
+
+    }
+
+
+    to {
+
+        transform:translateX(100%) rotate(25deg);
+
+    }
+
+}
 
 
 /* SECCIONES */
@@ -313,7 +354,51 @@ footer a {
     animation: aparecer 1s ease;
 
 }
+/* PARTICULAS */
 
+body::before {
+
+    content:"";
+
+    position:fixed;
+
+    width:400px;
+    height:400px;
+
+    background:
+    radial-gradient(circle,#8B5CF6 2px,transparent 3px);
+
+    background-size:50px 50px;
+
+    opacity:.15;
+
+    top:0;
+    left:0;
+
+    animation:moverParticulas 20s linear infinite;
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
+
+
+@keyframes moverParticulas {
+
+    from {
+
+        transform:translateY(0);
+
+    }
+
+    to {
+
+        transform:translateY(100px);
+
+    }
+
+}
 @media(max-width:800px){
 
     .navbar{
