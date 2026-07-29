@@ -10,10 +10,10 @@ html {
 }
 
 body {
-    background:
-        radial-gradient(circle at top left, rgba(139,92,246,0.15), transparent 35%),
-        radial-gradient(circle at bottom right, rgba(56,189,248,0.12), transparent 35%),
-        #0D0D12;
+   background:
+radial-gradient(circle at top left,#8B5CF622 0%,transparent 35%),
+radial-gradient(circle at bottom right,#38BDF822 0%,transparent 40%),
+linear-gradient(180deg,#09090B 0%,#0D0F17 45%,#111827 100%);
     color: white;
     line-height: 1.6;
     overflow-x: hidden;
@@ -470,5 +470,30 @@ section.visible{
     opacity:1;
 
     transform:translateY(0);
+
+}
+/* ========================= */
+/* LOGO */
+/* ========================= */
+
+.brand-logo{
+
+width:52px;
+
+height:52px;
+
+object-fit:contain;
+
+transition:.35s;
+
+filter:drop-shadow(0 0 10px rgba(56,189,248,.25));
+
+}
+
+.brand-logo:hover{
+
+transform:rotate(10deg) scale(1.08);
+
+filter:drop-shadow(0 0 18px rgba(139,92,246,.6));
 
 }
