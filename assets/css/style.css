@@ -264,7 +264,7 @@ h2 {
 
 .card.locked {
     opacity: 0.5;
-    border-dash: 2px dashed rgba(255,255,255,0.2);
+    border: 2px dashed rgba(255,255,255,0.2);
 }
 
 /* BRAINIMAL INTRO */
