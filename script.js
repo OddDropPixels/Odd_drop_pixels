@@ -25,6 +25,22 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
         threshold: 0.15
+        // =========================
+// MENÚ HAMBURGUESA
+// =========================
+
+const toggle = document.getElementById("menu-toggle");
+const menu = document.querySelector(".menu");
+
+if(toggle && menu){
+
+    toggle.addEventListener("click", () => {
+
+        menu.classList.toggle("active");
+
+    });
+
+}
     });
 
 
