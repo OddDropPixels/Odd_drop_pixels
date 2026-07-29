@@ -343,3 +343,40 @@ footer a {
         max-width: 100%;
     }
 }
+/* HERO STATS */
+
+.hero-stats{
+    display:flex;
+    gap:25px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.stat{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    border-radius:18px;
+    padding:18px 28px;
+    min-width:120px;
+    text-align:center;
+    transition:.35s;
+}
+
+.stat:hover{
+    transform:translateY(-6px);
+    border-color:#38BDF8;
+    box-shadow:0 0 25px rgba(56,189,248,.25);
+}
+
+.stat h2{
+    color:#38BDF8;
+    margin:0;
+    font-size:2rem;
+}
+
+.stat p{
+    color:#bdbdc8;
+    font-size:.9rem;
+    margin-top:6px;
+}
