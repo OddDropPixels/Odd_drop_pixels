@@ -380,3 +380,26 @@ footer a {
     font-size:.9rem;
     margin-top:6px;
 }
+.vision{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+    padding:90px 8%;
+
+}
+
+.vision p{
+
+    margin-top:20px;
+
+    font-size:1.1rem;
+
+    color:#c7c7d1;
+
+    line-height:1.9;
+
+}
