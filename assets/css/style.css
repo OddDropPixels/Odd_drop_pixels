@@ -313,7 +313,39 @@ background:rgba(255,255,255,.06);
     font-weight: bold;
     font-size: 0.9rem;
 }
+<section>
 
+<h2>Preguntas frecuentes</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>¿Cuándo estará disponible Brainimal?</h3>
+
+<p>Estamos trabajando para lanzar la primera versión muy pronto.</p>
+
+</div>
+
+<div class="card">
+
+<h3>¿Habrá versión Premium?</h3>
+
+<p>Sí. Incluirá herramientas avanzadas y funciones exclusivas.</p>
+
+</div>
+
+<div class="card">
+
+<h3>¿Puedo colaborar?</h3>
+
+<p>Claro. Escríbenos al correo de contacto.</p>
+
+</div>
+
+</div>
+
+</section>
 /* FOOTER */
 footer {
     padding: 40px 8%;
@@ -511,5 +543,80 @@ filter:drop-shadow(0 0 10px rgba(56,189,248,.25));
 transform:rotate(10deg) scale(1.08);
 
 filter:drop-shadow(0 0 18px rgba(139,92,246,.6));
+
+}
+/* ========================= */
+/* BRAINIMAL SHOWCASE */
+/* ========================= */
+
+.brainimal-showcase{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:70px;
+
+margin:80px 0;
+
+flex-wrap:wrap;
+
+}
+
+.phone{
+
+width:270px;
+
+background:#111827;
+
+padding:18px;
+
+border-radius:40px;
+
+border:2px solid rgba(56,189,248,.35);
+
+box-shadow:
+
+0 0 40px rgba(56,189,248,.18);
+
+}
+
+.phone img{
+
+width:100%;
+
+border-radius:25px;
+
+display:block;
+
+}
+
+.showcase-text{
+
+max-width:500px;
+
+}
+
+.showcase-text h2{
+
+text-align:left;
+
+margin-bottom:25px;
+
+}
+
+.showcase-text ul{
+
+list-style:none;
+
+}
+
+.showcase-text li{
+
+margin:18px 0;
+
+font-size:1.05rem;
 
 }
