@@ -313,39 +313,7 @@ background:rgba(255,255,255,.06);
     font-weight: bold;
     font-size: 0.9rem;
 }
-<section>
 
-<h2>Preguntas frecuentes</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>¿Cuándo estará disponible Brainimal?</h3>
-
-<p>Estamos trabajando para lanzar la primera versión muy pronto.</p>
-
-</div>
-
-<div class="card">
-
-<h3>¿Habrá versión Premium?</h3>
-
-<p>Sí. Incluirá herramientas avanzadas y funciones exclusivas.</p>
-
-</div>
-
-<div class="card">
-
-<h3>¿Puedo colaborar?</h3>
-
-<p>Claro. Escríbenos al correo de contacto.</p>
-
-</div>
-
-</div>
-
-</section>
 /* FOOTER */
 footer {
     padding: 40px 8%;
