@@ -109,29 +109,46 @@ color:#38BDF8;
 }
 
 /* HERO SECTION */
-.hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 140px 8% 60px;
-    gap: 40px;
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    padding:160px 8% 100px;
+    flex-wrap:wrap;
 }
 
-.hero-text {
-    max-width: 600px;
+.hero-text{
+    flex:1;
+    min-width:320px;
+    max-width:650px;
 }
 
-.hero h1 {
-    font-size: 3.2rem;
-    line-height: 1.1;
-    margin-bottom: 20px;
+.hero h1{
+
+font-size:3.8rem;
+
+line-height:1.05;
+
+font-weight:800;
+
+margin-bottom:25px;
+
+letter-spacing:-1px;
+
 }
 
-.hero p {
-    color: #c7c7d1;
-    margin-bottom: 35px;
-    font-size: 1.05rem;
+.hero p{
+
+font-size:1.1rem;
+
+line-height:1.8;
+
+color:#CBD5E1;
+
+margin-bottom:35px;
+
 }
 
 .hero-buttons {
@@ -174,22 +191,39 @@ box-shadow:
 }
 
 /* BRAND LOGO CARD IN HERO */
-.logo-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(139,92,246,.3);
-    padding: 30px;
-    border-radius: 24px;
-    backdrop-filter: blur(10px);
-    max-width: 380px;
-    width: 100%;
+.logo-card{
+
+background:rgba(255,255,255,.04);
+
+border:1px solid rgba(56,189,248,.25);
+
+border-radius:30px;
+
+padding:35px;
+
+backdrop-filter:blur(18px);
+
+box-shadow:
+
+0 20px 50px rgba(0,0,0,.35);
+
+transition:.35s;
+
+}
+.logo-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:
+
+0 0 35px rgba(56,189,248,.25),
+
+0 0 80px rgba(139,92,246,.20);
+
 }
 
 .logo-card img {
-    width: 220px;
+    width: 260px;
     height: auto;
     filter: drop-shadow(0 0 20px rgba(139,92,246,.5));
     animation: flotar 3s ease-in-out infinite;
