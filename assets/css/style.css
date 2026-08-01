@@ -625,11 +625,11 @@ display:flex;
 
 align-items:center;
 
-justify-content:center;
+justify-content:space-between;
 
-gap:70px;
+gap:80px;
 
-margin:80px 0;
+padding:50px 0;
 
 flex-wrap:wrap;
 
@@ -637,19 +637,36 @@ flex-wrap:wrap;
 
 .phone{
 
-width:270px;
-
-background:#111827;
+width:290px;
 
 padding:18px;
 
-border-radius:40px;
+border-radius:42px;
 
-border:2px solid rgba(56,189,248,.35);
+background:linear-gradient(
+180deg,
+#1E293B,
+#111827
+);
+
+border:2px solid rgba(56,189,248,.25);
 
 box-shadow:
 
-0 0 40px rgba(56,189,248,.18);
+0 20px 60px rgba(0,0,0,.45),
+
+0 0 40px rgba(56,189,248,.20);
+
+transition:.35s;
+
+}
+.phone:hover{
+
+transform:
+
+translateY(-8px)
+
+rotate(-2deg);
 
 }
 
@@ -657,23 +674,32 @@ box-shadow:
 
 width:100%;
 
-border-radius:25px;
-
 display:block;
 
-}
+border-radius:28px;
 
+box-shadow:
+
+0 10px 30px rgba(0,0,0,.35);
+
+}
 .showcase-text{
 
-max-width:500px;
+flex:1;
+
+min-width:320px;
+
+max-width:560px;
 
 }
 
 .showcase-text h2{
 
-text-align:left;
+font-size:2.2rem;
 
-margin-bottom:25px;
+margin-bottom:28px;
+
+text-align:left;
 
 }
 
@@ -685,9 +711,28 @@ list-style:none;
 
 .showcase-text li{
 
-margin:18px 0;
+padding:12px 0;
 
-font-size:1.05rem;
+font-size:1.08rem;
+
+color:#CBD5E1;
+
+border-bottom:1px solid rgba(255,255,255,.06);
+
+}
+.showcase-text .button{
+
+margin-top:30px;
+
+padding:16px 34px;
+
+font-size:1rem;
+
+border-radius:40px;
+
+box-shadow:
+
+0 0 30px rgba(139,92,246,.30);
 
 }
 .cards{
@@ -695,3 +740,4 @@ font-size:1.05rem;
 margin-top:40px;
 
 }
+
