@@ -229,6 +229,7 @@ box-shadow:
     filter: drop-shadow(0 0 20px rgba(139,92,246,.5));
     animation: flotar 3s ease-in-out infinite;
     margin-bottom: 15px;
+    animation:flotar 4s ease-in-out infinite;
 }
 
 @keyframes flotar {
@@ -578,6 +579,35 @@ color:#64748B;
 }
 
 @media(max-width:850px){
+    .hero-stats{
+
+justify-content:center;
+
+}
+
+.stat{
+
+min-width:140px;
+
+}
+
+.showcase-text h2{
+
+text-align:center;
+
+}
+
+.showcase-text{
+
+text-align:center;
+
+}
+
+.showcase-text li{
+
+text-align:left;
+
+}
 
 .menu-toggle{
     display:block;
@@ -851,5 +881,66 @@ background:linear-gradient(
 background-clip:text;
 
 color:transparent;
+
+}
+
+.badge{
+
+display:inline-block;
+
+margin-bottom:20px;
+
+padding:8px 16px;
+
+border-radius:30px;
+
+background:rgba(56,189,248,.12);
+
+border:1px solid rgba(56,189,248,.35);
+
+color:#38BDF8;
+
+font-size:.85rem;
+
+font-weight:700;
+
+letter-spacing:1px;
+
+text-transform:uppercase;
+
+}
+section h2{
+
+position:relative;
+
+display:inline-block;
+
+left:50%;
+
+transform:translateX(-50%);
+
+margin-bottom:45px;
+
+}
+
+section h2::after{
+
+content:"";
+
+display:block;
+
+width:70px;
+
+height:4px;
+
+margin:12px auto 0;
+
+border-radius:20px;
+
+background:linear-gradient(
+90deg,
+#8B5CF6,
+#38BDF8
+);
 
 }
