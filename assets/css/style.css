@@ -839,3 +839,17 @@ max-width:100%;
 height:auto;
 
 }
+.gradient-text{
+
+background:linear-gradient(
+90deg,
+#8B5CF6,
+#38BDF8
+);
+
+-webkit-background-clip:text;
+background-clip:text;
+
+color:transparent;
+
+}
