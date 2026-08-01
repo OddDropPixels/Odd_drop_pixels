@@ -151,10 +151,18 @@ margin-bottom:35px;
 
 }
 
-.hero-buttons {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
+.hero-buttons{
+
+display:flex;
+
+gap:18px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+align-items:stretch;
+
 }
 
 .button {
@@ -168,6 +176,15 @@ margin-bottom:35px;
     font-weight: bold;
     transition: .3s;
     text-align: center;
+    min-width:240px;
+
+min-height:56px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
 }
 
 .button:hover{
